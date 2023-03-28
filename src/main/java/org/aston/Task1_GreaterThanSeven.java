@@ -1,19 +1,8 @@
-package org.example;
+package org.aston;
 import java.util.Scanner;
 
-public class Main {
+public class Task1_GreaterThanSeven {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Введите число: ");
-        int number = scanner.nextInt();
-
-        if (number > 7) {
-            System.out.println("Привет");
-        }
-    }
-
-/*    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number;
 
@@ -25,5 +14,5 @@ public class Main {
                 System.out.println("Привет");
             }
         } while (number != 0);
-    }*/
+    }
 }
