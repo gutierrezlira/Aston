@@ -4,12 +4,10 @@ public class Task2_Greeting {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите имя: ");
-        String name = scanner.nextLine();
-        greetUser(name);
-    }
-
-    private static void greetUser(String name) {
-        if (name.equalsIgnoreCase("вячеслав")) {
+        String name = scanner.nextLine().trim();
+        if (name.isEmpty()) {
+            System.out.println("Имя не может быть пустым");
+        } else if (name.equalsIgnoreCase("вячеслав")) {
             System.out.println("Привет, Вячеслав");
         } else {
             System.out.println("Нет такого имени");
