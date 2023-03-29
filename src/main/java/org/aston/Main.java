@@ -53,8 +53,12 @@ public class Main {
 
     private static void array() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите длину массива: ");
-        int n = scanner.nextInt();
+        int n;
+
+        do {
+            System.out.print("Введите длину массива (больше 0): ");
+            n = scanner.nextInt();
+        } while (n <= 0);
 
         int[] arr = new int[n];
         System.out.printf("Введите %d элементов массива:%n", n);
